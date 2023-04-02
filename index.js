@@ -58,7 +58,7 @@ app.use((req, res, next) => {
 
 app.post("/home", (req, res) => {
   if (!req.body.test) {
-    return res.status(400).json({ status: "test is required" });
+    return res.status(400).json({ status: "test is required!" });
   }
   console.log(req.body);
   // res.status(500).json({ javascript: "object" });
