@@ -35,7 +35,7 @@
 // express:
 
 const express = require("express");
-const app = express();
+const app = express(); // веб-сервер
 
 const PORT = 8081;
 
@@ -65,6 +65,8 @@ app.post("/home", (req, res) => {
   // res.sendStatus(200);
   res.json({ javascript: "object", body: req.body });
 });
+
+// щоб запустити сервер:
 
 app.listen(PORT, (err) => {
   if (err) {
